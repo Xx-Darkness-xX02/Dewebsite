@@ -37,8 +37,9 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: black;
-    text-decoration: Highlight;
+    color: #10397c;
+    transition: 0.8s;
+    border-bottom: red solid 1px;
 }
 
 /*----------------------------------------- articles -----------------------------------*/
