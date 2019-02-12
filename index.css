@@ -6,6 +6,8 @@ body {
 
 div#wrapper {
     color: white;
+    max-width: 1200px;
+    margin: auto;
 }
 
 /*---------------------------------------- nav -----------------------------------------*/
@@ -39,10 +41,11 @@ nav ul li a {
 nav ul li a:hover {
     color: #10397c;
     transition: 0.8s;
+    text-decoration: underline;
+    text-decoration-color: #10397c;
 }
 
 /*----------------------------------------- articles -----------------------------------*/
-
 
 /*artikel 1 */
 article#artikel1 {
@@ -56,18 +59,16 @@ article#artikel1 {
     height: 400px;
 }
 
-img#autoschade{
-   display: block;
+img#autoschade {
+    display: block;
     margin-left: auto;
     margin-right: auto;
     align-content: center;
     padding-top: 30px;
 }
 
-
-
 /*artikel 2 */
-article#artikel2{
+article#artikel2 {
     width: 98%;
     background-color: #404247;
     align-items: center;
@@ -75,10 +76,10 @@ article#artikel2{
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    height:400px;
+    height: 400px;
 }
 
-img#auto{
+img#auto {
     width: 98%;
     height: 200px;
     padding-top: 35px;
@@ -86,11 +87,7 @@ img#auto{
     margin-right: 1%;
 }
 
-
-
-
-/*artikel 3*/
-article#artikel3{
+article#artikel3 {
     width: 98%;
     background-color: #404247;
     align-items: center;
@@ -98,20 +95,19 @@ article#artikel3{
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    height:400px;
+    height: 400px;
 }
 
-img#team{
+img#team {
     height: 200px;
     padding-top: 35px;
     width: 98%;
     margin-left: 1%;
     margin-right: 1%;
 }
-
 
 /*artikel 4*/
-article#artikel4{
+article#artikel4 {
     width: 98%;
     background-color: #404247;
     align-items: center;
@@ -119,10 +115,10 @@ article#artikel4{
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    height:400px;
+    height: 400px;
 }
 
-img#occasions{
+img#occasions {
     height: 200px;
     padding-top: 35px;
     width: 98%;
@@ -131,32 +127,132 @@ img#occasions{
 }
 
 /* fonts en extras die bij alle artikelen gelijk zijn*/
-p{
+p {
     font-family: open sans condensed, sans-serif;
     margin-left: 5px;
     margin-right: 5px;
 }
 
-h1{
+h1 {
     display: block;
     text-align: center;
-    font-family: nanum gothic,sans-serif;
+    font-family: nanum gothic, sans-serif;
     padding-top: 7px;
     margin-bottom: 0px;
 }
 
-
-
 /*----------------------------------------------- footer -----------------------------*/
 
-footer{
+footer {
     width: 100%;
     background-color: #181819;
-    height: 200px;
+    height: 100%;
     margin-top: 20px;
 }
 
+div#footerimage img {
+    width: 250px;
+    height: 250px;
+    display: none;
+}
 
+div#adres {
+    display: inline-block;
+    margin-left: 54%;
+}
+
+footer ul {
+    list-style: none;
+    font-family: namun gothic, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: larger;
+    padding-top: 60px;
+    width: 100px;
+    float: left;
+    padding-left: 0;
+    color: white
+}
+
+div#footertekst {
+    width: 300px;
+    margin-left: 40%;
+    color: white;
+
+}
+
+div#footerinhoud {
+    display: inline-block;
+
+}
+
+/*------------------------------------------------------------------------------ tablet --------------------------------------------------------------------------------------------*/
+@media all and (min-width: 570px) {
+
+    nav ul li {
+        display: inline-block;
+        border-top: none;
+    }
+
+    div#footerinhoud {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    div#adres {
+        margin-left: 0;
+    }
+
+    div#footertekst {
+        margin-left: 0;
+    }
+}
+
+@media all and (min-width: 786px) {
+    div#footerimage img {
+        display: flex;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    article#artikel1 {
+        display: inline-block;
+        width: 49%;
+    }
+
+    article#artikel2 {
+        display: inline-block;
+        width: 49%;
+        margin-top: 20px;
+    }
+
+    article#artikel3 {
+        display: inline-block;
+        width: 49%;
+    }
+
+    article#artikel4 {
+        display: inline-block;
+        width: 49%;
+    }
+
+    div#artikel1en2 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    div#artikel3en4 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    div#alleartikelen {
+        width: 100%;
+    }
+}
 
 
 
