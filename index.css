@@ -118,6 +118,12 @@ article#artikel4 {
     height: 400px;
 }
 
+article#artikel4 a img:hover{
+border-color: red ;
+}
+
+
+
 img#occasions {
     height: 200px;
     padding-top: 35px;
