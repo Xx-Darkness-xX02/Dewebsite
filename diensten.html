@@ -23,15 +23,41 @@
 <div id="aanbod">
     <p>wij hebben een ruim aanbod aan voertuigen</p>
     <p class="zoeken">vul hieronder het merk van de auto die je zoekt!</p>
-
-    <table id="voertuigen">
-      <tr>
-        <th style="width:60%">merk</th>
-          <th style="width: 40%">model</th>
-      </tr>
-    </table>
+    <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">klik hier</button>
+    <div id="myDropdown" class="dropdown-content">
+        <input type="text" placeholder="search.." id="myInput" onkeyup="filterFunction()">
+    <a href="Automerken/volkswagen">volkswagen</a>
+    <a href="Automerken/mercedes">mercedes</a>
+    <a href="Automerken/citroen">citroen</a>
+    <a href="Automerken/renault">renault</a>
+    <a href="Automerken/DAF">DAF</a>
+    <a href="Automerken/toyota">toyota</a>
+    <a href="Automerken/BMW">BMW</a>
+    <a href="Automerken/ford">ford</a>
+    <a href="Automerken/honda">honda</a>
+    <a href="Automerken/audi">audi</a>
+    </div>
+</div>
 </div>
 
+<div id="aanbiedingen">
+    <h3>AANBIEDINGEN!</h3>
+    <p>Naast dat wij auto's verhuren doen wij ook aan onderhoud van autos en reparen we schades aan auto's.</p>
+    <ul>
+        <li>kleine beurt €50,-</li>
+        <li>grote beurt €150,-</li>
+        <li>banden vervangen per band €175,-</li>
+        <li>velgen poedercoaten €70,-</li>
+        <li>motorisch onderhoud €500</li>
+        <li>voor lakschade kunt u een offerte aanvragen</li>
+    </ul>
+    <p>voor meer informatie over ons aanbod bel dan 06-43219876</p>
+</div>
+
+
+
+<script src="diensten.js"></script>
 
 </body>
 </html>
