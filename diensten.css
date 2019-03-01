@@ -1,5 +1,10 @@
 body{
-    background-color: #54D17A;
+    background-color: #ecf2f6;
+}
+
+div#wrapper{
+    max-width: 1200px ;
+    margin:auto;
 }
 
 /*-------------------------------------------------------------------- nav----------------------------------------------------------*/
@@ -19,10 +24,12 @@ div.nav {
     height: auto;
     min-height: 70px;
     line-height: 70px;
+    background-color: #181819;
 }
 
 div.menu{
     margin: 0 30px 0 0;
+    background-color: #181819;
 }
 
 div.menu a {
@@ -71,7 +78,7 @@ label{
 
 /*----------------------------------------------------------------------------- dropdown menu  --------------------------------------------------------*/
 .dropbtn{
-    background-color: red;
+    background-color: #7689ff;
     color: white;
     padding:16px;
     font-size: 16px;
@@ -134,23 +141,31 @@ label{
 /*-------------------------------------------------------- div 1 ---------------------------------------------------------------*/
 
 div#aanbod{
-    background-color: aqua;
+    border-radius: 25px;
+    background-color: #b9cbff;
     height: 350px;
     display: inline-block;
-    margin-left: 10px;
-    margin-top:10px;
-    width: 390px;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 20px;
+    box-shadow: 0 0 20px 2px #00000059;
+    border: 2.5px solid #181819;
 }
 
 /*--------------------------------------------------------- div 2 ----------------------------------------------------------------------*/
 
 div#aanbiedingen{
-    background-color: aqua;
+    background-color: #b9cbff;
     height: 350px;
     display: inline-block;
-    margin-left: 10px;
-    margin-top: 10px;
-    width: 390px;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 20px 2px #00000059;
+    border: 2.5px solid #181819;
 }
 
 div#aanbiedingen h3{
@@ -160,4 +175,126 @@ div#aanbiedingen h3{
 div#aanbiedingen p{
     margin-left: 5px;
     margin-right: 30px;
+}
+
+/*-------------------------------------------------------------------------- div 3 ----------------------------------------------------------*/
+
+div#occasions {
+    border: 2.5px solid #181819;
+    border-radius: 25px;
+    background-color: #b9cbff;
+    display: inline-block;
+    height:375px;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 20px;
+    -moz-box-shadow: 3px 3px 3px #000000;
+    -webkit-box-shadow: 3px 3px 3px #000000;
+    box-shadow: 0 0 20px 2px #00000059;
+}
+
+/*------------------------------------------------------------------------------- footer ------------------------------------------------------------------------------*/
+
+footer {
+    width: 100%;
+    background-color: #181819;
+    height: 600px;
+    margin-top: 20px;
+}
+
+div#footerimage img {
+    width: 250px;
+    height: 250px;
+    display: none;
+}
+
+div#adres {
+    display: inline-block;
+    margin-left: 50%;
+}
+
+footer ul {
+    list-style: none;
+    font-family: namun gothic, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: larger;
+    padding-top: 60px;
+    width: 100px;
+    float: left;
+    padding-left: 0;
+    color: white
+}
+
+div#footertekst {
+    width: 300px;
+    margin-left: 40%;
+    color: white;
+
+}
+
+div#footerinhoud {
+    display: inline-block;
+
+}
+
+/*---------------------------------------------------------------------------------- Tablet query -----------------------------------*/
+@media all and (min-width: 570px){
+    div#footerinhoud {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    div#adres {
+        margin-left: 0;
+    }
+
+    div#footertekst {
+        margin-left: 0;
+    }
+}
+
+/*---------------------------------------------------------- groter ------------------------------*/
+
+@media all and (min-width: 786px) {
+    div#footerimage img {
+        display: flex;
+    }
+
+    div#aanbod{
+        width: 48%;
+        float: left;
+        height: 375px;
+    }
+
+    div#aanbiedingen{
+        width: 48%;
+        float: right;
+        height: 375px;
+    }
+
+}
+
+/*--------------------------------------------------------- dekstop ---------------------------------*/
+
+@media all and (min-width:1150px){
+
+    div#aanbod{
+        width: 32%;
+    }
+
+    div#aanbiedingen{
+        width: 32%;
+    }
+
+    div#occasions{
+        width: 32%;
+    }
+
+    div#alles{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
 }
